@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Arrays;
 
 @RestController
-public class FizzBuzzController {
+public class FizzBuzz {
 
     @RequestMapping(value = "/fizzbuzz/{number}", method = RequestMethod.GET)
     public @ResponseBody String index(@PathVariable int number) {
