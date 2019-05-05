@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class FizzBuzz {
 
     @RequestMapping(value = "/fizzbuzz/{number}", method = RequestMethod.GET)
-    public @ResponseBody String index(@PathVariable int number) {
+    public @ResponseBody String execute(@PathVariable int number) {
         if (number % 15 == 0) {
             return "FizzBuzz";
         } else if (number % 3 == 0) {
@@ -20,5 +20,9 @@ public class FizzBuzz {
             return "Buzz";
         }
         return Integer.toString(number);
+    }
+
+    String executeWithStar(int number) {
+        return "Star";
     }
 }
