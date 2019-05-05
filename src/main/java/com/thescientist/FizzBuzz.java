@@ -1,11 +1,6 @@
 package com.thescientist;
 
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Arrays;
 
 @RestController
 public class FizzBuzz {
@@ -22,7 +17,12 @@ public class FizzBuzz {
         return Integer.toString(number);
     }
 
-    String executeWithStar(int number) {
-        return "Star";
+    String executeWithStar(String result, int number) {
+        if("Fizz".equals(result)) {
+            if (number % 2 == 0) {
+                return "Star";
+            }
+        }
+        return result;
     }
 }
