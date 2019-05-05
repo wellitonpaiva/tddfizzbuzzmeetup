@@ -1,6 +1,6 @@
 <h1>Fizz Buzz Exercise to use as TDD example</h1>
 
-Example for the Meetup that will occurr on May 7th (https://www.meetup.com/pt-BR/GFT-LATAM-Meetup/events/260381239/)
+Example for the Meetup that will occurr on May 7th (<https://www.meetup.com/pt-BR/GFT-LATAM-Meetup/events/260381239/>)
 
 <h2>FizzBuzz details:</h2>
 Given a number, system should print some text on screen, for each number from 1 to input value, accordingly to the logic below:
