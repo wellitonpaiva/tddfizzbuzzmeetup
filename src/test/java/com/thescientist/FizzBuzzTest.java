@@ -23,4 +23,9 @@ public class FizzBuzzTest {
     public void whenOneThenReturnOne() {
         assertThat(fizzBuzz.executeWithStar("1", 1), is("1"));
     }
+
+    @Test
+    public void givenExecuteWhenSixThenStar() {
+        assertThat(fizzBuzz.execute(6), is("Star"));
+    }
 }

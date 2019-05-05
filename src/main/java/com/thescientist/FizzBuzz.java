@@ -3,10 +3,15 @@ package com.thescientist;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-public class FizzBuzz {
+class FizzBuzz {
 
     @RequestMapping(value = "/fizzbuzz/{number}", method = RequestMethod.GET)
-    public @ResponseBody String execute(@PathVariable int number) {
+    @ResponseBody String execute(@PathVariable int number) {
+        String result = fizzBuzz(number);
+        return executeWithStar(result, number);
+    }
+
+    private String fizzBuzz(int number) {
         if (number % 15 == 0) {
             return "FizzBuzz";
         } else if (number % 3 == 0) {
